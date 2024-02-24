@@ -16,7 +16,7 @@ window.addEventListener('mousemove', (e) => {
 
 const speed = 0.17;
 
-const tick = () => {
+const squishythingy = () => {
   circle.x += (mouse.x - circle.x) * speed;
   circle.y += (mouse.y - circle.y) * speed;
   const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
@@ -38,7 +38,7 @@ const tick = () => {
 
   circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
 
-  window.requestAnimationFrame(tick);
+  window.requestAnimationFrame(squishythingy);
 }
 
-tick();
+squishythingy();
